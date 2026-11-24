@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Spływy kajakowe Wieprzem - baza w Strzyżowicach (gm. Żyrzyn) | NAKANU</title>
+<meta name="description" content="Spływy kajakowe po Wieprzu z bazy NAKANU w Strzyżowicach koło Żyrzyna. Sześć tras od 8 do 36 km, transport w cenie, ogniska i oferty dla grup. Rezerwacja: 724 222 217.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/anton-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-400-r.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-p800.webp" imagesrcset="img/hero-p800.webp 800w, img/hero-p1700.webp 1700w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<style>
+@font-face{font-family:Anton;font-weight:400;font-display:swap;src:url(fonts/anton-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+2192}
+@font-face{font-family:Anton;font-weight:400;font-display:swap;src:url(fonts/anton-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(fonts/barlow-400-r.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(fonts/barlow-400-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C,U+00D3,U+00F3}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(fonts/barlow-600-r.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(fonts/barlow-600-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C,U+00D3,U+00F3}
+:root{--or:#EA6704;--or2:#C85500;--cz:#111412;--rz:#0F1E19;--sz:#F1F3F2;--tx:#2A2F2C;--li:#D9DEDB}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Barlow,system-ui,sans-serif;color:var(--tx);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Anton,Impact,sans-serif;font-weight:400;line-height:1.05;margin:0;color:var(--cz);letter-spacing:.01em}
+h2{font-size:clamp(34px,5vw,58px)}
+.w{width:min(1200px,100% - 32px);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:600 17px/1 Barlow,sans-serif;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;cursor:pointer}
+.btn-or{background:var(--or);color:#fff;clip-path:polygon(0 6%,4% 0,100% 0,100% 88%,97% 100%,0 100%)}
+.btn-or:hover{background:var(--or2)}
+.btn-ob{border-color:#fff;color:#fff}
+.btn-ob:hover{background:#fff;color:var(--cz)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* naglowek */
+.top{position:absolute;inset:0 0 auto;z-index:20;color:#fff}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{width:26px;height:auto}
+.logo b{font:400 27px/1 Anton,sans-serif;letter-spacing:.06em}
+.logo small{display:block;font:600 10.5px/1 Barlow,sans-serif;letter-spacing:.24em;opacity:.85;margin-top:4px}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{text-decoration:none;font-weight:600;font-size:16px}
+.nav a:not(.btn):hover{color:var(--or)}
+.nav .btn{min-height:44px;padding:0 18px}
+.burger{display:none;background:none;border:0;color:#fff;width:46px;height:46px;padding:10px;cursor:pointer}
+.burger span{display:block;height:3px;background:currentColor;margin:6px 0;clip-path:polygon(0 0,100% 20%,96% 100%,2% 80%)}
+
+/* pierwszy ekran */
+.hero{position:relative;min-height:min(100svh,920px);display:flex;align-items:flex-end;color:#fff;background:#3d6f9a;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,18,15,.62) 0%,rgba(10,18,15,.38) 38%,rgba(10,18,15,0) 66%),linear-gradient(0deg,rgba(10,18,15,.55),rgba(10,18,15,0) 40%)}
+.hero .w{position:relative;z-index:2;padding:130px 0 120px}
+.hero h1{color:#fff;font-size:clamp(46px,7.4vw,104px);max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--or)}
+.hero p{font-size:clamp(18px,1.6vw,21px);max-width:34em;margin:22px 0 30px;text-shadow:0 1px 10px rgba(0,0,0,.35)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px}
+.rwa{position:absolute;left:0;right:0;bottom:-1px;z-index:3;height:46px;width:100%;color:#fff}
+
+/* rzeka i trasy */
+.trasy{padding:90px 0 100px}
+.glowka{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:34px}
+.glowka p{max-width:33em;margin:0;font-size:18px}
+.rzeka{position:relative;margin:10px 0 46px}
+.rzeka svg{width:100%;height:auto;display:block}
+.rzeka text{font:600 15px Barlow,sans-serif;fill:var(--cz)}
+.rzeka .baza{fill:var(--or)}
+.karty{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.karta{border:2px solid var(--cz);padding:24px 24px 22px;display:flex;flex-direction:column;background:#fff;position:relative}
+.karta:hover{border-color:var(--or)}
+.karta h3{font-size:30px;margin-top:12px;padding-right:8px}
+.karta .opis{margin:6px 0 16px;color:#545b57}
+.odc{height:14px;margin:0 0 18px}
+.odc svg{width:100%;height:14px;display:block}
+.dane{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;font-size:15.5px;border-top:1px solid var(--li);padding-top:14px}
+.dane span{display:flex;align-items:center;gap:7px}
+.dane i{width:9px;height:9px;background:var(--or);display:inline-block;clip-path:polygon(15% 0,100% 12%,85% 100%,0 85%)}
+.cena{display:flex;align-items:baseline;justify-content:space-between;margin-top:auto;padding-top:18px}
+.cena b{font:400 40px/1 Anton,sans-serif;color:var(--cz)}
+.cena b small{font-size:20px}
+.cena a{font-weight:600;color:var(--or2);text-decoration:none;border-bottom:2px solid currentColor}
+.poziom{position:absolute;top:-2px;right:-2px;background:var(--cz);color:#fff;font:600 13px/1 Barlow;padding:8px 12px;letter-spacing:.05em}
+.poziom.l{background:#2F7D4F}.poziom.t{background:var(--or)}
+.transport{margin:26px 0 0;font-weight:600;font-size:18px}
+.transport b{color:var(--or2)}
+
+/* w cenie */
+.ciemna{background:var(--rz);color:#DCE3DF;position:relative}
+.ciemna h2{color:#fff}
+.wcenie{display:grid;grid-template-columns:5fr 6fr;gap:60px;align-items:center;padding:100px 0}
+.wcenie figure{margin:0;position:relative;justify-self:center}
+.wcenie figure img{width:100%;max-width:520px;height:auto;clip-path:polygon(0 3%,8% 0,100% 2%,98% 96%,90% 100%,0 98%)}
+.lista{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:26px 34px}
+.lista li{border-top:2px solid rgba(255,255,255,.14);padding-top:14px}
+.lista b{display:block;color:#fff;font-size:19px;margin-bottom:4px}
+.lista em{font:400 15px/1 Anton,sans-serif;color:var(--or);font-style:normal;display:block;margin-bottom:8px;letter-spacing:.08em}
+
+/* o nas */
+.onas{padding:100px 0;background:#fff}
+.onas .w{display:grid;grid-template-columns:6fr 5fr;gap:60px;align-items:center}
+.onas blockquote{margin:22px 0;font:400 clamp(26px,3vw,36px)/1.15 Anton,sans-serif;color:var(--cz)}
+.onas blockquote em{color:var(--or);font-style:normal}
+.liczby{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;border-top:2px solid var(--cz);padding-top:22px}
+.liczby b{display:block;font:400 clamp(34px,4vw,48px)/1 Anton,sans-serif;color:var(--cz)}
+.liczby span{font-size:15px;font-weight:600}
+.onas figure{margin:0;justify-self:center}
+.onas figure img{width:100%;max-width:557px;height:auto}
+
+/* galeria */
+.galeria{background:var(--sz);padding:90px 0}
+.pas{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 16px 18px;margin-top:30px;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--or) transparent}
+.pas.ciag{cursor:grabbing;scroll-snap-type:none}
+.pas img{height:min(420px,62vw);width:auto;flex:none;scroll-snap-align:center;user-select:none;-webkit-user-drag:none}
+.pas::before,.pas::after{content:"";flex:0 0 max(0px,(100vw - 1200px)/2 - 16px)}
+.strz{display:flex;gap:10px}
+.strz button{width:50px;height:50px;border:2px solid var(--cz);background:#fff;cursor:pointer;font:600 22px/1 Barlow}
+.strz button:hover{background:var(--cz);color:#fff}
+
+/* kontakt */
+.kontakt{padding:100px 0}
+.kontakt .w{display:grid;grid-template-columns:5fr 6fr;gap:60px}
+.tel{display:block;font:400 clamp(44px,5.4vw,66px)/1 Anton,sans-serif;color:var(--or);text-decoration:none;margin:22px 0 8px}
+.dk p{margin:0 0 6px;font-size:18px}
+.dk a{font-weight:600}
+.mapa{margin-top:26px;aspect-ratio:16/10;background:var(--sz);border:2px solid var(--cz);position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start;background:var(--sz);padding:30px}
+form h3{grid-column:1/-1;font-size:32px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px}
+input,select,textarea{font:400 17px Barlow,sans-serif;padding:13px 14px;border:2px solid var(--li);background:#fff;color:var(--cz);border-radius:0;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--or)}
+.pel{grid-column:1/-1}
+.zgoda{flex-direction:row;align-items:flex-start;font-weight:400;font-size:14.5px;gap:10px}
+.zgoda input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--or)}
+form .btn{justify-self:start}
+
+/* stopka */
+.stopka{background:var(--cz);color:#AEB6B1;padding:46px 0 26px;font-size:15.5px}
+.stopka .g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+.stopka b{color:#fff}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:var(--or)}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.stopka .d{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+.dzwon{display:none}
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:560px;background:#fff;border:2px solid var(--cz);padding:14px 16px;display:flex;gap:12px;align-items:center;font-size:14.5px;line-height:1.4}
+.cookies[hidden]{display:none}
+.cookies button{flex:none;font:600 15px Barlow;padding:10px 14px;border:2px solid var(--cz);background:#fff;cursor:pointer}
+.cookies button.ok{background:var(--cz);color:#fff}
+
+.rzm{display:none}
+@media (max-width:1020px){
+ .karty{grid-template-columns:1fr 1fr}
+ .wcenie,.onas .w,.kontakt .w{grid-template-columns:1fr;gap:40px}
+ .onas figure{order:-1}
+}
+@media (max-width:760px){
+ body{font-size:16.5px}
+ .top .w{height:66px}
+ .nav{position:fixed;inset:66px 0 auto;background:var(--cz);flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 18px;display:none}
+ .nav.otw{display:flex}
+ .nav a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:18px}
+ .nav .btn{margin-top:14px;border:0}
+ .burger{display:block}
+ .hero{min-height:100svh;align-items:flex-end}
+ .hero picture img{object-position:68% 50%}
+ .hero::before{background:linear-gradient(0deg,rgba(10,18,15,.82) 0%,rgba(10,18,15,.55) 45%,rgba(10,18,15,.15) 75%,rgba(10,18,15,.35) 100%)}
+ .hero .w{padding:96px 0 64px}
+ .hero h1{font-size:clamp(42px,12.4vw,58px)}
+ .hero p{margin:16px 0 26px;font-size:17px}
+ .hero .cta .btn{flex:1 1 100%}
+ .rwa{height:26px}
+ .trasy,.galeria,.onas,.kontakt{padding:64px 0}
+ .wcenie{padding:64px 0}
+ .karty{grid-template-columns:1fr}
+ .rzeka{margin:4px 0 30px}
+ .rzeka svg{display:none}
+ .rzm{display:block;list-style:none;margin:0;padding:4px 0 4px 34px;position:relative;font-weight:600}
+ .rzm::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:8px;background:#1F6FA8;border-radius:4px}
+ .rzm li{position:relative;padding:5px 0}
+ .rzm li::before{content:"";position:absolute;left:-29px;top:50%;width:14px;height:14px;margin-top:-7px;background:#111412;border:3px solid #fff;border-radius:50%}
+ .rzm li.b{color:var(--or2)}
+ .rzm li.b::before{background:var(--or);width:20px;height:20px;margin-top:-10px;left:-32px}
+ .lista{grid-template-columns:1fr}
+ .wcenie figure img,.onas figure img{max-width:280px}
+ .pas img{height:200px}
+ .liczby{grid-template-columns:1fr 1fr;gap:20px}
+ form{grid-template-columns:1fr;padding:22px 18px}
+ .stopka .g{grid-template-columns:1fr 1fr}
+ .stopka .g>div:first-child{grid-column:1/-1}
+ .dzwon{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--or);color:#fff;font:600 17px/1 Barlow;align-items:center;justify-content:center;gap:10px;height:56px;text-decoration:none;transform:translateY(100%);transition:transform .25s}
+ .dzwon.pok{transform:none}
+ .dzwon svg{width:18px;height:18px}
+ .stopka{padding-bottom:80px}
+ .cookies{left:10px;right:10px;bottom:10px;flex-wrap:wrap;gap:8px 10px;padding:10px 12px;font-size:13.5px}
+ .cookies span{flex:1 1 100%}
+ .cookies button{flex:1;padding:8px 10px;font-size:14px}
+}
+@media (max-height:700px) and (max-width:760px){
+ .hero .w{padding:84px 0 44px}
+ .hero h1{font-size:40px}
+ .hero p{font-size:16px;margin:12px 0 24px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+ <div class="w">
+  <a class="logo" href="#" aria-label="NAKANU - strona główna"><img src="img/n.png" width="156" height="256" alt="Znak NAKANU"><span><b>NAKANU</b><small>KAJAK &amp; SURVIVAL</small></span></a>
+  <nav class="nav" id="nav">
+   <a href="#trasy">Trasy i cennik</a>
+   <a href="#w-cenie">W cenie</a>
+   <a href="#o-nas">O nas</a>
+   <a href="#galeria">Galeria</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="btn btn-or" href="tel:+48724222217"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M4.2 1.5l3 .4 1.3 4-2 1.6c.9 2.2 2.6 4 4.9 5l1.6-2 4 1.3.4 3-2.2 2.2C9 16.7 3.3 11 2 3.7z"/></svg>724 222 217</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <picture>
+  <source media="(max-width:760px)" srcset="img/hero-p800.webp 800w, img/hero-p1700.webp 1700w" sizes="100vw">
+  <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1494" alt="Flaga NAKANU kajak &amp; survival i drogowskaz do bazy kajakowej w Strzyżowicach" fetchpriority="high">
+ </picture>
+ <div class="w">
+  <h1>Spływy kajakowe <em>Wieprzem</em></h1>
+  <p>W NAKANU nie gadamy o przygodzie, my ją robimy. Baza kajakowa w Strzyżowicach koło Żyrzyna, sześć tras od 8 do 36 km i transport w cenie. Ty wsiadasz do kajaka, resztą zajmujemy się my.</p>
+  <div class="cta">
+   <a class="btn btn-or" href="tel:+48724222217"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M4.2 1.5l3 .4 1.3 4-2 1.6c.9 2.2 2.6 4 4.9 5l1.6-2 4 1.3.4 3-2.2 2.2C9 16.7 3.3 11 2 3.7z"/></svg>Zadzwoń i zarezerwuj</a>
+   <a class="btn btn-ob" href="#trasy">Wybierz trasę</a>
+  </div>
+ </div>
+ <svg class="rwa" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 30 L60 22 L95 31 L160 18 L210 27 L268 14 L300 24 L372 20 L420 33 L470 21 L540 26 L590 12 L640 25 L700 19 L748 30 L820 16 L860 24 L930 22 L975 34 L1030 20 L1090 26 L1130 13 L1190 24 L1250 18 L1300 29 L1360 17 L1400 25 L1440 20 L1440 46 L0 46Z"/><path fill="#EA6704" d="M0 30 L60 22 L95 31 L160 18 L210 27 L268 14 L300 24 L372 20 L420 33 L470 21 L540 26 L590 12 L640 25 L700 19 L748 30 L820 16 L860 24 L930 22 L975 34 L1030 20 L1090 26 L1130 13 L1190 24 L1250 18 L1300 29 L1360 17 L1400 25 L1440 20 L1440 25 L1400 30 L1360 22 L1300 34 L1250 23 L1190 29 L1130 18 L1090 31 L1030 25 L975 39 L930 27 L860 29 L820 21 L748 35 L700 24 L640 30 L590 17 L540 31 L470 26 L420 38 L372 25 L300 29 L268 19 L210 32 L160 23 L95 36 L60 27 L0 35Z"/></svg>
+</section>
+
+<section class="trasy" id="trasy">
+ <div class="w">
+  <div class="glowka">
+   <h2>Wybierz swój odcinek Wieprza</h2>
+   <p>Wszystkie trasy biegną przez naszą bazę w Strzyżowicach albo z niej startują. Krótki odcinek na pierwszy raz z dziećmi, cały dzień na wodzie dla tych, co chcą więcej.</p>
+  </div>
+  <div class="rzeka" aria-label="Kolejność miejscowości na trasach, z biegiem rzeki">
+   <svg viewBox="0 0 1200 120" role="img" aria-hidden="true">
+    <path d="M10 64 C120 40 190 88 300 62 S470 36 560 66 S720 94 800 60 S990 34 1080 64 S1170 70 1190 58" fill="none" stroke="#1F6FA8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M10 64 C120 40 190 88 300 62 S470 36 560 66 S720 94 800 60 S990 34 1080 64 S1170 70 1190 58" fill="none" stroke="#7FB8E0" stroke-width="2" stroke-dasharray="2 14" stroke-linecap="round"/>
+    <g font-family="Barlow">
+     <circle cx="20" cy="62" r="9" fill="#111412"/><text x="20" y="28" text-anchor="start">Baranów</text>
+     <circle cx="262" cy="68" r="9" fill="#111412"/><text x="262" y="104" text-anchor="middle">Pogonów</text>
+     <circle cx="390" cy="52" r="9" fill="#111412"/><text x="390" y="28" text-anchor="middle">Osmolice</text>
+     <circle cx="650" cy="80" r="14" fill="#EA6704"/><text class="baza" x="650" y="114" text-anchor="middle" font-weight="600">Strzyżowice - baza NAKANU</text>
+     <circle cx="972" cy="40" r="9" fill="#111412"/><text x="972" y="20" text-anchor="middle">Bobrowniki</text>
+     <circle cx="1180" cy="58" r="9" fill="#111412"/><text x="1180" y="98" text-anchor="end">Dęblin</text>
+    </g>
+   </svg>
+   <ol class="rzm"><li>Baranów</li><li>Pogonów</li><li>Osmolice</li><li class="b">Strzyżowice - baza NAKANU</li><li>Bobrowniki</li><li>Dęblin</li></ol>
+  </div>
+
+  <div class="karty">
+   <article class="karta"><span class="poziom l">ŁATWA</span>
+    <h3>Osmolice - Strzyżowice</h3><p class="opis">Dla rodzin lub na pierwszy raz.</p>
+    <div class="odc"><svg viewBox="0 0 100 14" preserveAspectRatio="none"><rect y="5" width="100" height="4" fill="#D9DEDB"/><rect x="32" y="3" width="22" height="8" fill="#EA6704"/></svg></div>
+    <div class="dane"><span><i></i>8 km</span><span><i></i>ok. 1,5 h</span></div>
+    <div class="cena"><b>50 zł <small>/ os.</small></b><a href="#kontakt">Rezerwuję</a></div></article>
+   <article class="karta"><span class="poziom">ŚREDNIA</span>
+    <h3>Pogonów - Strzyżowice</h3><p class="opis">Relaks z nutą przygody.</p>
+    <div class="odc"><svg viewBox="0 0 100 14" preserveAspectRatio="none"><rect y="5" width="100" height="4" fill="#D9DEDB"/><rect x="21" y="3" width="33" height="8" fill="#EA6704"/></svg></div>
+    <div class="dane"><span><i></i>12 km</span><span><i></i>ok. 3 h</span></div>
+    <div class="cena"><b>55 zł <small>/ os.</small></b><a href="#kontakt">Rezerwuję</a></div></article>
+   <article class="karta"><span class="poziom">ŚREDNIA</span>
+    <h3>Baranów - Strzyżowice</h3><p class="opis">Aktywnie, ale bez spiny.</p>
+    <div class="odc"><svg viewBox="0 0 100 14" preserveAspectRatio="none"><rect y="5" width="100" height="4" fill="#D9DEDB"/><rect x="0" y="3" width="54" height="8" fill="#EA6704"/></svg></div>
+    <div class="dane"><span><i></i>20 km</span><span><i></i>ok. 4 h</span></div>
+    <div class="cena"><b>60 zł <small>/ os.</small></b><a href="#kontakt">Rezerwuję</a></div></article>
+   <article class="karta"><span class="poziom">ŚREDNIA</span>
+    <h3>Strzyżowice - Dęblin</h3><p class="opis">Spokojnie, ale nie nudno.</p>
+    <div class="odc"><svg viewBox="0 0 100 14" preserveAspectRatio="none"><rect y="5" width="100" height="4" fill="#D9DEDB"/><rect x="54" y="3" width="46" height="8" fill="#EA6704"/></svg></div>
+    <div class="dane"><span><i></i>17 km</span><span><i></i>ok. 4,5 h</span></div>
+    <div class="cena"><b>60 zł <small>/ os.</small></b><a href="#kontakt">Rezerwuję</a></div></article>
+   <article class="karta"><span class="poziom t">TRUDNA</span>
+    <h3>Baranów - Bobrowniki</h3><p class="opis">Dla tych, co chcą więcej.</p>
+    <div class="odc"><svg viewBox="0 0 100 14" preserveAspectRatio="none"><rect y="5" width="100" height="4" fill="#D9DEDB"/><rect x="0" y="3" width="81" height="8" fill="#EA6704"/></svg></div>
+    <div class="dane"><span><i></i>30 km</span><span><i></i>ok. 8 h</span></div>
+    <div class="cena"><b>70 zł <small>/ os.</small></b><a href="#kontakt">Rezerwuję</a></div></article>
+   <article class="karta"><span class="poziom t">TRUDNA</span>
+    <h3>Baranów - Dęblin</h3><p class="opis">Cały dzień na wodzie, aż do Wisły.</p>
+    <div class="odc"><svg viewBox="0 0 100 14" preserveAspectRatio="none"><rect y="5" width="100" height="4" fill="#D9DEDB"/><rect x="0" y="3" width="100" height="8" fill="#EA6704"/></svg></div>
+    <div class="dane"><span><i></i>36 km</span><span><i></i>ok. 10 h</span></div>
+    <div class="cena"><b>100 zł <small>/ os.</small></b><a href="#kontakt">Rezerwuję</a></div></article>
+  </div>
+  <p class="transport">Transport na start trasy: <b>w cenie spływu.</b></p>
+ </div>
+</section>
+
+<section class="ciemna" id="w-cenie">
+ <div class="w wcenie">
+  <figure><img src="img/hero-m.webp" width="765" height="1020" loading="lazy" alt="Kajaki NAKANU przygotowane na brzegu Wieprza"></figure>
+  <div>
+   <h2>Wsiadasz do kajaka. Resztą zajmujemy się my</h2>
+   <ul class="lista">
+    <li><em>01</em><b>Spływ z obsługą</b>Pełna organizacja spływu, sprzęt i wsparcie na każdym etapie.</li>
+    <li><em>02</em><b>Wygodne kajaki</b>Sprawdzony sprzęt, który robi różnicę na wodzie.</li>
+    <li><em>03</em><b>Wsparcie instruktora</b>Krótkie szkolenie i pomoc, żebyś czuł się pewnie od startu.</li>
+    <li><em>04</em><b>Ogniska i biwaki</b>Ognisko i integracja, idealne zakończenie dnia na rzece.</li>
+    <li><em>05</em><b>Oferty dla grup i firm</b>Elastyczne pakiety i trasy dopasowane do Twojej ekipy.</li>
+    <li><em>06</em><b>Malownicze trasy</b>Spokojne, zielone odcinki Wieprza, z dala od codzienności.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="onas" id="o-nas">
+ <div class="w">
+  <div>
+   <h2>Działamy lokalnie, z doświadczeniem i sercem</h2>
+   <blockquote>Organizujemy spływy kajakowe, ogniska i wydarzenia, które pozwalają <em>oderwać się od codzienności</em> i wrócić do natury.</blockquote>
+   <p>Nasza baza stoi nad samym Wieprzem w Strzyżowicach. Przyjeżdżają do nas rodziny z dziećmi, grupy znajomych i firmy na integrację. Każdemu dobieramy odcinek rzeki do tego, ile ma czasu i sił.</p>
+   <div class="liczby">
+    <div><b>10</b><span>lat na rzece</span></div>
+    <div><b>500</b><span>wydarzeń</span></div>
+    <div><b>3 000</b><span>zadowolonych klientów</span></div>
+    <div><b>6</b><span>wyróżnień</span></div>
+   </div>
+  </div>
+  <figure><img src="img/baza.webp" width="557" height="743" loading="lazy" alt="Tablica bazy kajakowej NAKANU nad Wieprzem i kajaki na piasku"></figure>
+ </div>
+</section>
+
+<section class="galeria" id="galeria">
+ <div class="w glowka">
+  <h2>Nasze spływy</h2>
+  <div class="strz"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcia">&#8592;</button><button type="button" data-k="1" aria-label="Następne zdjęcia">&#8594;</button></div>
+ </div>
+ <div class="pas" id="pas">
+  <img src="img/g1.webp" width="393" height="524" loading="lazy" alt="Baza kajakowa NAKANU nad rzeką">
+  <img src="img/chill.webp" width="488" height="651" loading="lazy" alt="Hamaki przy bazie NAKANU">
+  <img src="img/g5.webp" width="900" height="1200" loading="lazy" alt="Drogowskaz NAKANU i flaga przy wjeździe do bazy">
+  <img src="img/g2.webp" width="393" height="524" loading="lazy" alt="Teren bazy NAKANU">
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="w">
+  <div class="dk">
+   <h2>Zarezerwuj spływ</h2>
+   <a class="tel" href="tel:+48724222217">724 222 217</a>
+   <p><a href="mailto:nakanukajak@gmail.com">nakanukajak@gmail.com</a></p>
+   <p>Baza kajakowa: Strzyżowice, 24-103 Żyrzyn</p>
+   <p><a href="https://www.facebook.com/nakanukajaki" rel="noopener">Facebook</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/nakanukajaki/" rel="noopener">Instagram</a></p>
+   <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Strzy%C5%BCowice%2C%2024-103%20%C5%BByrzyn&amp;z=13&amp;output=embed"></div>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('.btn').textContent='Podgląd: formularz zadziała na docelowej stronie'">
+   <h3>Zapytaj o termin</h3>
+   <label>Imię i nazwisko<input name="imie" autocomplete="name" required></label>
+   <label>Telefon<input name="tel" type="tel" autocomplete="tel" required></label>
+   <label>Trasa<select name="trasa"><option>Osmolice - Strzyżowice (8 km)</option><option>Pogonów - Strzyżowice (12 km)</option><option>Baranów - Strzyżowice (20 km)</option><option>Strzyżowice - Dęblin (17 km)</option><option>Baranów - Bobrowniki (30 km)</option><option>Baranów - Dęblin (36 km)</option><option>Jeszcze nie wiem, doradźcie</option></select></label>
+   <label>Termin i liczba osób<input name="termin" placeholder="np. 14.06, 6 osób"></label>
+   <label class="pel">Wiadomość<textarea name="wiad" rows="4"></textarea></label>
+   <label class="zgoda pel"><input type="checkbox" required>Zgadzam się na przetwarzanie moich danych w celu odpowiedzi na zapytanie, zgodnie z polityką prywatności.</label>
+   <button class="btn btn-or" type="submit">Wyślij zapytanie</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="w">
+  <div class="g">
+   <div><b>NAKANU kajak &amp; survival</b><br>Spływy kajakowe Wieprzem, ogniska i wydarzenia dla rodzin, grup i firm.<br>Strzyżowice, 24-103 Żyrzyn</div>
+   <ul><li><a href="#trasy">Trasy i cennik</a></li><li><a href="#o-nas">O nas</a></li><li><a href="#galeria">Galeria</a></li></ul>
+   <ul><li><a href="tel:+48724222217">724 222 217</a></li><li><a href="mailto:nakanukajak@gmail.com">E-mail</a></li><li><a href="#">Polityka prywatności</a></li></ul>
+  </div>
+  <div class="d"><span>© 2026 NAKANU</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=nakanu.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<a class="dzwon" id="dzwon" href="tel:+48724222217"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M4.2 1.5l3 .4 1.3 4-2 1.6c.9 2.2 2.6 4 4.9 5l1.6-2 4 1.3.4 3-2.2 2.2C9 16.7 3.3 11 2 3.7z"/></svg>Zadzwoń: 724 222 217</a>
+
+<div class="cookies" id="cookies" hidden><span>Strona używa plików cookie, m.in. w mapie dojazdu Google.</span><button type="button" data-c="0">Tylko niezbędne</button><button type="button" class="ok" data-c="1">Akceptuję</button></div>
+<script>
+(function(){
+ var c=document.getElementById('cookies'),z=null;
+ try{z=localStorage.getItem('nk-zgoda')}catch(e){}
+ if(z===null)c.hidden=false;
+ c.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;try{localStorage.setItem('nk-zgoda',b.dataset.c)}catch(e){}c.hidden=true;});
+})();
+</script>
+<script defer src="main.js"></script>
+</body>
+</html>
